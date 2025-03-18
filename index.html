@@ -1,0 +1,162 @@
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Full-stack Developer Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="bg-black text-white">
+    <header class="flex justify-between items-center p-6">
+        <div>
+            <h1 class="text-2xl font-bold">Rajan Rajbhar</h1>
+        </div>
+        <nav class="hidden md:flex space-x-6 justify-center">
+            <a class="text-gray-400 hover:text-white" href="index.html">Home</a>
+            <a class="text-gray-400 hover:text-white" href="project.html">Projects</a>
+            
+            <a class="text-gray-400 hover:text-white" href="contact.html">Contacts</a>
+        </nav>
+        <div class="hidden md:flex space-x-2">
+            <button class="bg-gray-800 text-white px-4 py-2 rounded-full">En</button>
+      
+        </div>
+        <div class="md:hidden">
+            <button id="menu-toggle" class="text-white focus:outline-none">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <div id="mobile-menu" class="hidden md:hidden">
+        <nav class="flex flex-col items-center space-y-4">
+            <a class="text-gray-400 hover:text-white" href="index.html">Home</a>
+            <a class="text-gray-400 hover:text-white" href="project.html">Projects</a>
+            
+            <a class="text-gray-400 hover:text-white" href="contact.html">Contacts</a>
+        </nav>
+    </div>
+
+    <main class="flex flex-col items-center text-center mt-20 p-4 overflow-hidden">
+
+        <h2 class="text-6xl font-bold custom-font">Full-stack</h2>
+        <h2 class="text-6xl font-bold custom-font">Developer</h2>
+        <p class="text-gray-400 mt-4">My goal is to <i>write maintainable, clean</i> and <i>understandable code</i> to
+            make development enjoyable.</p>
+        <div class="mt-8">
+            <a href="project.html"><button class="bg-white text-black px-6 py-2 rounded-full flex items-center space-x-2">
+                <span>Projects</span>
+                <i class="fas fa-arrow-right"></i>
+            </button></a>
+        </div>
+        <div class="flex space-x-4 p-6 overflow-hidden">
+            <a class="bg-gray-900 p-4 rounded-full" href="https://github.com/RajanRajbhar12"><i class="fab fa-github"></i> <i>Github</i></a>
+            <a class="bg-gray-900 p-4 rounded-full" href="https://www.linkedin.com/in/rajan-rajbhar-84bb93305/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fab fa-linkedin"></i> <i>Linkedin</i></a>
+
+        </div>
+    </main>
+
+    <div class="container mx-auto p-4 ">
+        <p class="p-4 text-center text-2xl font-bold">
+            MY PROJECTS</p>
+        <div class="swiper-container p-4">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="Screenshot 2025-02-17 232510.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="Screenshot 2025-02-18 171108.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="Screenshot 2025-02-21 000534.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="Screenshot 2025-02-26 003217.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="Screenshot (118).png" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="Screenshot 2025-02-17 232510.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="Screenshot 2025-02-18 171108.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="Screenshot 2025-02-21 000534.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="Screenshot 2025-02-26 003217.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="Screenshot (118).png" alt="">
+                </div>
+
+            </div>
+            <!-- Add Arrows -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </div>
+   <div class="mx-auto p-4 text-center">
+    <div class="flex flex-col lg:flex-row items-center justify-center space-y-8 lg:space-y-0 lg:space-x-8 max-w-screen-lg mx-auto">
+        <!-- Text Section in the Center -->
+        <div class="w-auto">
+            <h1 class="text-3xl lg:text-4xl font-light mb-6">
+                Hello! I'm Rajan, a <span class="font-semibold">developer</span> passionate about building modern web applications.
+            </h1>
+            <p class="text-lg lg:text-xl font-light mb-8">
+                With <span class="font-semibold">proficiency in AI-powered application development</span> and full-stack development.
+            </p>
+            <div class="space-y-6">
+                <div class="bg-white bg-opacity-70 p-6 rounded-2xl border border-white text-black shadow-lg">
+                    <h2 class="text-xl font-semibold mb-2">Front-end</h2>
+                    <p>JavaScript / HTML / CSS / React / Next.js / Tailwind CSS / Responsive Design / API Integration</p>
+                </div>
+                <div class="flex flex-col lg:flex-row space-y-4 lg:space-y-0 lg:space-x-6">
+                    <div class="bg-gray-900 bg-opacity-80 p-6 rounded-2xl border border-white text-white shadow-lg flex-1">
+                        <h2 class="text-xl font-semibold mb-2">Styles</h2>
+                        <p>CSS / SCSS / Tailwind / Responsive Web Design</p>
+                    </div>
+                    <div class="bg-gray-900 p-6 rounded-2xl border border-white text-white shadow-lg flex-1">
+                        <h2 class="text-xl font-semibold mb-2">Back-end</h2>
+                        <p>Node.js / Express / MongoDB / MySQL / API Development / Web Services</p>
+                    </div>
+                </div>
+                <div class="flex flex-col lg:flex-row space-y-4 lg:space-y-0 lg:space-x-6">
+                    <div class="bg-gray-900 bg-opacity-80 p-6 rounded-2xl border border-white text-white shadow-lg flex-1">
+                        <h2 class="text-xl font-semibold mb-2">DevOps</h2>
+                        <p>Git / GitHub / Docker / CI/CD / Deployment</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+            <!-- Image Section on Right -->
+            
+
+
+    </div>
+    </div>
+
+    </div>
+
+    </div>
+    </div>
+
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

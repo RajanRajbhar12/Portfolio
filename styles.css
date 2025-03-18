@@ -1,0 +1,104 @@
+:root {
+    --swiper-theme-color: #e5e5e5 !important;
+  }
+  
+  body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #141414;
+    color: #e5e5e5;
+  }
+  
+  .swiper-container {
+    width: 100%;
+    overflow: hidden; /* Ensure no overflow */
+  }
+  
+  .swiper-slide img {
+    width: 100%; /* Make images responsive */
+    height: auto;
+    object-fit: cover; /* Ensure images fit nicely */
+    max-width: 100%;
+  }
+  
+  .contact-link:hover {
+    transform: scale(1.1);
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
+    color: white;
+    transition: transform 0.3s ease-in-out, background 0.3s ease-in-out;
+}
+
+.contact-link i {
+    transition: transform 0.3s ease-in-out;
+}
+
+.contact-link:hover i {
+    transform: rotate(20deg);
+}
+
+/* Additional styling for personal info */
+.personal-info {
+    background-color: #1a1a1a;
+    padding: 20px;
+    border-radius: 10px;
+}
+.container {
+  max-width: 100vw; /* Prevent container from overflowing */
+  overflow: hidden;
+  max-height: 300px;
+}
+
+  .swiper-slide {
+    transition: all 300ms ease-in-out;
+    border-radius: 5px;
+    width: auto !important;
+  }
+  
+  .swiper-slide img {
+    border-radius: 5px;
+    max-width: 18rem;
+    cursor: grab;
+  }
+  .fade-in-element {
+    opacity: 0;
+    /* Initially hidden */
+    transition: opacity 1s ease-in-out;
+}
+
+.left-slide-element {
+    transform: translateX(-100%);
+    /* Off-screen to the left */
+    transition: transform 1s ease-in-out;
+}
+
+.right-swipe-element {
+    transform: translateX(100%);
+    /* Off-screen to the right */
+    transition: transform 1s ease-in-out;
+}
+  .swiper-slide img:active {
+    cursor: grabbing;
+  }
+  
+  .swiper-slide:hover {
+    transform: scale(1.05);
+    transition: all 300ms ease-in-out;
+    z-index: 1;
+  }
+  
+  @media screen and (max-width: 599px) {
+    .swiper-slide img {
+      max-width: 14rem;
+    }
+    .swiper-button-next,
+    .swiper-button-prev {
+      display: none;
+    }
+  }
+  
+  @media screen and (max-width: 400px) {
+    .swiper-slide img {
+      max-width: 10.5rem;
+      border-radius: 2px;
+    }
+  }
+  

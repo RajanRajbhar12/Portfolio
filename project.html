@@ -1,0 +1,362 @@
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>
+        Portfolio
+    </title>
+    <script src="https://cdn.tailwindcss.com">
+    </script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .fade-in-element {
+            opacity: 0;
+            /* Initially hidden */
+            transition: opacity 1s ease-in-out;
+        }
+
+        .left-slide-element {
+            transform: translateX(-100%);
+            /* Off-screen to the left */
+            transition: transform 1s ease-in-out;
+        }
+
+        .right-swipe-element {
+            transform: translateX(100%);
+            /* Off-screen to the right */
+            transition: transform 1s ease-in-out;
+        }
+    </style>
+</head>
+
+<body class="bg-black text-white">
+    <header class="flex justify-between items-center p-6">
+        <div>
+            <h1 class="text-2xl font-bold">Rajan Rajbhar</h1>
+        </div>
+        <nav class="hidden md:flex space-x-6">
+            <a class="text-gray-400 hover:text-white" href="index.html">Home</a>
+        <a class="text-gray-400 hover:text-white" href="project.html">Projects</a>
+        
+
+        <a class="text-gray-400 hover:text-white" href="contact.html">Contacts</a>
+        </nav>
+        <div class="hidden md:flex space-x-2">
+            <button class="bg-gray-800 text-white px-4 py-2 rounded-full">En</button>
+            <button class="bg-gray-800 text-white px-4 py-2 rounded-full">Ge</button>
+        </div>
+        <div class="md:hidden">
+            <button id="menu-toggle" class="text-white focus:outline-none">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <div id="mobile-menu" class="hidden md:hidden">
+        <nav class="flex flex-col items-center space-y-4">
+          
+            <a class="text-gray-400 hover:text-white" href="project.html">Projects</a>
+            <a class="text-gray-400 hover:text-white" href="index.html">Home</a>
+            <a class="text-gray-400 hover:text-white" href="contact.html">Contacts</a>
+        </nav>
+    </div>
+
+    <div class="container mx-auto p-4" style="font-family: 'Fira Code', monospace;">
+        <div class="flex flex-col lg:flex-row items-center lg:items-start">
+            <div class="lg:w-1/2 p-6 fade-in-element">
+                <h2 class="text-3xl font-bold mb-4">
+                    <i>.../Projects...</i>
+                </h2>
+                <h1 class="text-4xl font-bold mb-4">
+                    FoodWiz
+                </h1>
+                <div class="flex flex-wrap gap-2 mb-4">
+                    <span class="bg-black text-white px-3 py-1 rounded-full border border-white">
+                        AI-powered Recipes
+                    </span>
+                    <span class="bg-black text-white px-3 py-1 rounded-full border border-white">
+                        Custom Meal Generation
+                    </span>
+                    <span class="bg-black text-white px-3 py-1 rounded-full border border-white">
+                        Real-time Ingredient Analysis
+                    </span>
+                </div>
+                <p class="mb-4">
+                    FoodWiz is an AI-driven platform that generates recipes based on the ingredients you have. Simply
+                    input your ingredients, and FoodWiz will suggest a recipe you can prepare.
+                </p>
+                <p class="mb-4">
+                    It's a quick and easy way to make the most of what you have in your kitchen, helping you cook meals
+                    without needing extra ingredients.
+                </p>
+
+
+
+                <div class="flex items-center relative gap-4">
+                    <div class="relative">
+                        <!-- View Demo Button with a link to your demo URL -->
+                        <a href="https://foodwiz-1.onrender.com/" target="_blank">
+                            <button id="view-demo" class="bg-white text-black p-3 rounded-full transition-all transform hover:scale-125">
+                                <i class="fas fa-eye"></i> View Demo
+                            </button>
+                        </a>
+                        
+                        <!-- View Code Button with a link to your GitHub repository -->
+                        <a href="https://github.com/RajanRajbhar12/foodwiz" target="_blank">
+                            <button id="view-code" class="bg-white text-black p-3 rounded-full transition-all transform hover:scale-125">
+                                <i class="fab fa-github"></i> View Code
+                            </button>
+                        </a>
+                    </div>
+                </div>
+                
+            </div>
+
+            <div class="lg:w-1/2 p-6">
+                <div class="grid grid-cols-2 gap-4">
+                    <div class="col-span-2 fade-in-element">
+                        <img alt="Mobile and desktop application interfaces showing statistics and graphs"
+                            class="rounded-lg" height="400" src="ji.png" width="600" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mx-auto p-6" style="font-family: 'Fira Code', monospace;">
+        <div class="flex flex-col-reverse lg:flex-row items-center lg:items-start">
+
+            <div class="lg:w-1/2 p-6">
+                <div class="grid grid-cols-2 gap-4">
+                    <div class="col-span-2 fade-in-element">
+                        <img alt="Mobile and desktop application interfaces showing statistics and graphs"
+                            class="rounded-lg w-full lg:w-auto h-auto" src="Screenshot 2025-02-20 193104.png"
+                            width="600" />
+                    </div>
+                </div>
+            </div>
+
+            <div class="lg:w-1/2 p-6 fade-in-element">
+                <h1 class="text-4xl font-bold mb-4">
+                    QuizWiz
+                </h1>
+                <div class="flex flex-wrap gap-2 mb-4">
+                    <span class="bg-black text-white px-3 py-1 rounded-full border border-white">
+                        AI-powered Quiz
+                    </span>
+                    <span class="bg-black text-white px-3 py-1 rounded-full border border-white">
+                        API Integration
+                    </span>
+                    <span class="bg-black text-white px-3 py-1 rounded-full border border-white">
+                        Real-time Analysis
+                    </span>
+                </div>
+                <p class="mb-4">
+                    QuizWiz is an intelligent quiz generation platform that harnesses the power of
+                    <span class="italic">AI</span> to generate questions, offer real-time feedback, and analyze user
+                    performance.
+                </p>
+                <p class="mb-4">
+                    The platform enables users to generate a variety of questions, including multiple choice,
+                    true/false,
+                    and open-ended questions, with instant validation of answers.
+                </p>
+                <div class="flex items-center relative gap-4">
+                    <div class="relative">
+                        <!-- View Demo Button with a link to your demo URL -->
+                        <a href="https://quizwizz-i6j9.onrender.com/" target="_blank">
+                            <button id="view-demo" class="bg-white text-black p-3 rounded-full transition-all transform hover:scale-125">
+                                <i class="fas fa-eye"></i> View Demo
+                            </button>
+                        </a>
+                        
+                        <!-- View Code Button with a link to your GitHub repository -->
+                        <a href="https://github.com/RajanRajbhar12/QUIZWIZZ" target="_blank">
+                            <button id="view-code" class="bg-white text-black p-3 rounded-full transition-all transform hover:scale-125">
+                                <i class="fab fa-github"></i> View Code
+                            </button>
+                        </a>
+                    </div>
+                </div>
+        </div>
+    </div>
+    <div class="container mx-auto p-6" style="font-family: 'Fira Code', monospace;">
+        <div class="flex flex-col lg:flex-row items-center lg:items-start">
+       
+    
+           
+    
+            <!-- Project Description Section -->
+            <div class="lg:w-1/2 p-6 fade-in-element">
+                <h1 class="text-4xl font-bold mb-4">
+                    Angell Bike Ecommerce Store
+                </h1>
+                <div class="flex flex-wrap gap-2 mb-4">
+                    <span class="bg-black text-white px-3 py-1 rounded-full border border-white">
+                        Full-Stack Development
+                    </span>
+                    <span class="bg-black text-white px-3 py-1 rounded-full border border-white">
+                        Product Management System
+                    </span>
+                    <span class="bg-black text-white px-3 py-1 rounded-full border border-white">
+                        Responsive Design
+                    </span>
+                </div>
+    
+                <p class="mb-4">
+                    Angell Bike is an online platform I developed from scratch, designed to provide a smooth and 
+                    intuitive shopping experience for electric bikes. I implemented key ecommerce features such as 
+                    a dynamic product listing page, detailed product descriptions, and a seamless checkout process.
+                </p>
+    
+                <p class="mb-4">
+                    The store is built using modern web development technologies, with a focus on 
+                    <span class="italic">responsive design</span>, ensuring a smooth user experience across devices.
+                </p>
+                
+    
+                <div class="flex items-center relative gap-4">
+                    <div class="relative">
+                        <!-- View Demo Button with a link to your demo URL -->
+                        <a href="https://angellbike.netlify.app/" target="_blank">
+                            <button id="view-demo" class="bg-white text-black p-3 rounded-full transition-all transform hover:scale-125">
+                                <i class="fas fa-eye"></i> View Demo
+                            </button>
+                        </a>
+                        
+                        <!-- View Code Button with a link to your GitHub repository -->
+                        <a href="https://github.com/RajanRajbhar12/Angell" target="_blank">
+                            <button id="view-code" class="bg-white text-black p-3 rounded-full transition-all transform hover:scale-125">
+                                <i class="fab fa-github"></i> View Code
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+     <!-- Image Section -->
+     <div class="lg:w-1/2 p-6">
+        <div class="grid grid-cols-2 gap-4">
+            <div class="col-span-2 fade-in-element">
+                <img alt="Angell Bike ecommerce platform showcasing products" class="rounded-lg w-full lg:w-auto h-auto" src="Screenshot 2025-02-22 001016.png"
+                    width="600" />
+            </div>
+        </div>
+    </div>
+        </div>
+    </div>
+    
+    
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = 1; // Make visible for fade-in
+                        entry.target.style.transform = 'translateX(0)'; // Slide into view
+                    }
+                });
+            }, { threshold: 0.1 }); // Adjust threshold if needed for timing
+
+            const fadeInElements = document.querySelectorAll(".fade-in-element");
+            const leftSlideElements = document.querySelectorAll(".left-slide-element");
+            const rightSwipeElements = document.querySelectorAll(".right-swipe-element");
+
+            fadeInElements.forEach(element => observer.observe(element));
+            leftSlideElements.forEach(element => observer.observe(element));
+            rightSwipeElements.forEach(element => observer.observe(element));
+        });
+
+
+        // Mobile Menu Toggle
+        const menuToggle = document.getElementById('menu-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
+        menuToggle.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Select buttons
+        const button1 = document.getElementById('button1');
+        const button2 = document.getElementById('button2');
+        const button3 = document.getElementById('button3');
+        const button4 = document.getElementById('button4');
+
+        let separated1 = false;
+        let separated2 = false;
+
+        // Handle click event for button1 and button2
+        button1.addEventListener('click', () => {
+            if (!separated1) {
+                // Move buttons apart
+                button1.style.transform = 'translateX(-50px)';
+                button2.style.transform = 'translateX(50px)';
+                separated1 = true;
+
+                // After animation, redirect to the respective link
+                setTimeout(() => {
+                    window.location.href = "your-link-here"; // Add your link here
+                }, 500); // Adjust timeout based on the desired animation speed
+            }
+        });
+
+        button2.addEventListener('click', () => {
+            if (!separated1) {
+                // Move buttons apart
+                button1.style.transform = 'translateX(-50px)';
+                button2.style.transform = 'translateX(50px)';
+                separated1 = true;
+
+                // After animation, redirect to the respective GitHub link
+                setTimeout(() => {
+                    window.location.href = "your-github-link-here"; // Add your GitHub link here
+                }, 500); // Adjust timeout based on the desired animation speed
+            }
+        });
+
+        // Handle click event for button3 and button4
+        button3.addEventListener('click', () => {
+            if (!separated2) {
+                // Move buttons apart
+                button3.style.transform = 'translateX(-50px)';
+                button4.style.transform = 'translateX(50px)';
+                separated2 = true;
+
+                // After animation, redirect to the respective link
+                setTimeout(() => {
+                    window.location.href = "your-link-here"; // Add your link here
+                }, 500); // Adjust timeout based on the desired animation speed
+            }
+        });
+
+        button4.addEventListener('click', () => {
+            if (!separated2) {
+                // Move buttons apart
+                button3.style.transform = 'translateX(-50px)';
+                button4.style.transform = 'translateX(50px)';
+                separated2 = true;
+
+                // After animation, redirect to the respective GitHub link
+                setTimeout(() => {
+                    window.location.href = "your-github-link-here"; // Add your GitHub link here
+                }, 500); // Adjust timeout based on the desired animation speed
+            }
+        });
+    </script>
+
+
+    </div>
+    </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
